@@ -1,9 +1,9 @@
 ---
 development:
   dialect: postgres
-  database: Movies
-  user: postgres
-  password: 00112233
+  database: {{envOr "DB_NAME" ""}}
+  user: {{envOr "DB_USER" ""}}
+  password: {{envOr "DB_PASSWORD" ""}}
   host: 127.0.0.1
   pool: 5
 

@@ -1,0 +1,2 @@
+DROP TABLE directors CASCADE;
+DROP TABLE movies;
